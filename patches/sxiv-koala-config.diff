@@ -1,0 +1,37 @@
+--- sxiv_base/config.def.h	2023-09-09 17:23:44.622080205 +0100
++++ sxiv/config.def.h	2023-09-09 17:28:45.058747877 +0100
+@@ -76,10 +76,8 @@
+ 	{ ControlMask,  XK_Up,            g_scroll_screen,      DIR_UP },
+ 	{ ControlMask,  XK_l,             g_scroll_screen,      DIR_RIGHT },
+ 	{ ControlMask,  XK_Right,         g_scroll_screen,      DIR_RIGHT },
+-	{ 0,            XK_plus,          g_zoom,               +1 },
+-	{ 0,            XK_KP_Add,        g_zoom,               +1 },
+-	{ 0,            XK_minus,         g_zoom,               -1 },
+-	{ 0,            XK_KP_Subtract,   g_zoom,               -1 },
++	{ 0,            XK_K,             g_zoom,               +1 },
++	{ 0,            XK_J,             g_zoom,               -1 },
+ 	{ 0,            XK_m,             g_toggle_image_mark,  None },
+ 	{ 0,            XK_M,             g_mark_range,         None },
+ 	{ ControlMask,  XK_m,             g_reverse_marks,      None },
+@@ -101,11 +99,9 @@
+ 	{ 0,            XK_R,             t_reload_all,         None },
+ 
+ 	{ 0,            XK_n,             i_navigate,           +1 },
++    { 0,            XK_N,             i_navigate,           -1 },
+ 	{ 0,            XK_n,             i_scroll_to_edge,     DIR_LEFT | DIR_UP },
+-	{ 0,            XK_space,         i_navigate,           +1 },
+-	{ 0,            XK_p,             i_navigate,           -1 },
+ 	{ 0,            XK_p,             i_scroll_to_edge,     DIR_LEFT | DIR_UP },
+-	{ 0,            XK_BackSpace,     i_navigate,           -1 },
+ 	{ 0,            XK_bracketright,  i_navigate,           +10 },
+ 	{ 0,            XK_bracketleft,   i_navigate,           -10 },
+ 	{ ControlMask,  XK_6,             i_alternate,          None },
+@@ -124,7 +120,7 @@
+ 	{ 0,            XK_J,             i_scroll_to_edge,     DIR_DOWN },
+ 	{ 0,            XK_K,             i_scroll_to_edge,     DIR_UP },
+ 	{ 0,            XK_L,             i_scroll_to_edge,     DIR_RIGHT },
+-	{ 0,            XK_equal,         i_set_zoom,           100 },
++	{ 0,            XK_space,         i_set_zoom,           100 },
+ 	{ 0,            XK_w,             i_fit_to_win,         SCALE_DOWN },
+ 	{ 0,            XK_W,             i_fit_to_win,         SCALE_FIT },
+ 	{ 0,            XK_e,             i_fit_to_win,         SCALE_WIDTH },
