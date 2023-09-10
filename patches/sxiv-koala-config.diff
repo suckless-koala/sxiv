@@ -1,5 +1,5 @@
---- sxiv_base/config.def.h	2023-09-09 17:23:44.622080205 +0100
-+++ sxiv/config.def.h	2023-09-09 17:28:45.058747877 +0100
+--- a/config.def.h	2023-09-09 17:23:44.622080205 +0100
++++ b/config.def.h	2023-09-09 17:28:45.058747877 +0100
 @@ -76,10 +76,8 @@
  	{ ControlMask,  XK_Up,            g_scroll_screen,      DIR_UP },
  	{ ControlMask,  XK_l,             g_scroll_screen,      DIR_RIGHT },
@@ -15,7 +15,7 @@
  	{ ControlMask,  XK_m,             g_reverse_marks,      None },
 @@ -101,11 +99,9 @@
  	{ 0,            XK_R,             t_reload_all,         None },
- 
+
  	{ 0,            XK_n,             i_navigate,           +1 },
 +    { 0,            XK_N,             i_navigate,           -1 },
  	{ 0,            XK_n,             i_scroll_to_edge,     DIR_LEFT | DIR_UP },
